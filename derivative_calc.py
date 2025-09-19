@@ -69,25 +69,25 @@ def trinomial_derivative_calc(constant_one,exponent_one,constant_two,exponent_tw
     
     if constant_two < 0 and constant_three < 0:
         if exponent_three == 0 or exponent_three == 1:
-            print(f"Your trinomial equation is: {constant_one}X^{exponent_one}{constant_two}X^{exponent_two}{constant_three}X")
+            print(f"f(x) = {constant_one}X^{exponent_one}{constant_two}X^{exponent_two}{constant_three}X")
         else:
-            print(f"Your trinomial equation is: {constant_one}X^{exponent_one}{constant_two}X^{exponent_two}{constant_three}X^{exponent_three}")
+            print(f"f(x) = {constant_one}X^{exponent_one}{constant_two}X^{exponent_two}{constant_three}X^{exponent_three}")
     elif constant_two < 0 and constant_three > 0:
         if exponent_three == 0 or exponent_three == 1:
-            print(f"Your trinomial equation is: {constant_one}X^{exponent_one}{constant_two}X^{exponent_two}+{constant_three}X")
+            print(f"f(x) = {constant_one}X^{exponent_one}{constant_two}X^{exponent_two}+{constant_three}X")
         else:
-            print(f"Your trinomial equation is: {constant_one}X^{exponent_one}{constant_two}X^{exponent_two}+{constant_three}X^{exponent_three}")
+            print(f"f(x) = {constant_one}X^{exponent_one}{constant_two}X^{exponent_two}+{constant_three}X^{exponent_three}")
     elif constant_two > 0 and constant_three < 0:
         if exponent_three == 0 or exponent_three == 1:
-            print(f"Your trinomial equation is: {constant_one}X^{exponent_one}+{constant_two}X^{exponent_two}{constant_three}X")
+            print(f"f(x) = {constant_one}X^{exponent_one}+{constant_two}X^{exponent_two}{constant_three}X")
         else:
-            print(f"Your trinomial equation is: {constant_one}X^{exponent_one}+{constant_two}X^{exponent_two}{constant_three}X^{exponent_three}")
+            print(f"f(x) = {constant_one}X^{exponent_one}+{constant_two}X^{exponent_two}{constant_three}X^{exponent_three}")
     else:
         if exponent_three == 0 or exponent_three == 1:
-            print(f"Your trinomial equation is: {constant_one}X^{exponent_one}+{constant_two}X^{exponent_two}+{constant_three}X")
+            print(f"f(x) = {constant_one}X^{exponent_one}+{constant_two}X^{exponent_two}+{constant_three}X")
 
         else:
-            print(f"Your trinomial equation is: {constant_one}X^{exponent_one}+{constant_two}X^{exponent_two}+{constant_three}X^{exponent_three}")
+            print(f"f(x) = {constant_one}X^{exponent_one}+{constant_two}X^{exponent_two}+{constant_three}X^{exponent_three}")
 
     c_one= constant_one
     c_two= constant_two
@@ -105,24 +105,24 @@ def trinomial_derivative_calc(constant_one,exponent_one,constant_two,exponent_tw
 
     if c_two < 0 and c_three < 0:
         if third_half != 0:
-            print(f"Derivative: {first_half}{second_half}{third_half}")
+            print(f"f'(x) = {first_half}{second_half}{third_half}")
         else:
-            print(f"Derivative: {first_half}{second_half}")
+            print(f"f'(x) = {first_half}{second_half}")
     elif c_two < 0 and c_three > 0:
         if third_half != 0:
-            print(f"Derivative: {first_half}{second_half}+{third_half}")
+            print(f"f'(x) = {first_half}{second_half}+{third_half}")
         else:
-            print(f"Derivative: {first_half}{second_half}")
+            print(f"f'(x) = {first_half}{second_half}")
     elif c_two > 0 and c_three < 0:
         if third_half != 0:
-            print(f"Derivative: {first_half}+{second_half}{third_half}")
+            print(f"f'(x) = {first_half}+{second_half}{third_half}")
         else:
-            print(f"Derivative: {first_half}+{second_half}")
+            print(f"f'(x) = {first_half}+{second_half}")
     elif c_two > 0 and c_three > 0:
         if third_half != 0:
-            print(f"Derivative: {first_half}+{second_half}+{third_half}")
+            print(f"f'(x) = {first_half}+{second_half}+{third_half}")
         else:
-            print(f"Derivative: {first_half}+{second_half}")
+            print(f"f'(x) = {first_half}+{second_half}")
 
     c_one = derivative_calc_values(constant_one, exponent_one)[0]
     ex_one = derivative_calc_values(constant_one, exponent_one)[1]
@@ -164,8 +164,9 @@ clear()
 exponent_three = int(input(f"What is your third exponent? {constant_one}x^{exponent_one} + {constant_two}x^{exponent_two} + {constant_three}x^"))
 clear()
 
-trinomial_derivative_calc(constant_one,exponent_one,constant_two,exponent_two, constant_three, exponent_three)
 
+
+trinomial_derivative_calc(constant_one,exponent_one,constant_two,exponent_two, constant_three, exponent_three)
 
 
 
