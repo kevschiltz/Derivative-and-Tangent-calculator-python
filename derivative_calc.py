@@ -8,11 +8,11 @@ def derivative_calc(constant, exponent):
     #minus the exponent by one
     n = exponent - 1
     #returning the x-nomial
-    if (c <= -1 or c > 1) and n == 1:
+    if (c < 0 or c > 1) and n == 1:
         return (f"{c}x")
-    elif (c <= -1 or c > 1) and n == 0:
+    elif (c < 0 or c > 1) and n == 0:
         return (f"{c}")
-    elif (c <= -1 or c > 1) and n > 1:
+    elif (c < 0 or c > 1) and n > 1:
         return (f"{c}x^{n}")
     else:
         return 0
@@ -57,9 +57,16 @@ def binomial_derivative_calc(constant_one,exponent_one,constant_two,exponent_two
     else:
         print(f"Derivative: {first_half}+{second_half}")
 
+
+
 #binomial_derivative_calc(4,3,2,2)
 
+
+
 def trinomial_derivative_calc(constant_one,exponent_one,constant_two,exponent_two, constant_three, exponent_three):
+   
+
+    
     if constant_two < 0 and constant_three < 0:
         if exponent_three == 0 or exponent_three == 1:
             print(f"Your trinomial equation is: {constant_one}X^{exponent_one}{constant_two}X^{exponent_two}{constant_three}X")
@@ -137,11 +144,31 @@ def trinomial_derivative_calc(constant_one,exponent_one,constant_two,exponent_tw
     else:
         equation = f"y = {int(m)}X{int(b)}"
         print(f"The tangent line at ({x_value},{y_value}) is: {equation}")
+    
+
+def clear():
+    print("\n" * 200)
+    
+    
+clear()
+constant_one = int(input("What is your first constant?")) 
+clear()
+exponent_one = int(input(f"What is your first exponent? {constant_one}x^"))
+clear()
+constant_two = int(input(f"What is your second constant? {constant_one}x^{exponent_one} + "))
+clear()
+exponent_two = int(input(f"What is your second exponent? {constant_one}x^{exponent_one} + {constant_two}x^"))
+clear()
+constant_three = int(input(f"What is your third constant? {constant_one}x^{exponent_one} + {constant_two}x^{exponent_two} + "))
+clear()
+exponent_three = int(input(f"What is your third exponent? {constant_one}x^{exponent_one} + {constant_two}x^{exponent_two} + {constant_three}x^"))
+clear()
+
 
 #THIS IS WHERE YOU INPUT NUMBERS
 #NUMBERS GO coefficitent1, exponent1, coefficitent2, exponent2, coefficitent3, exponent3
 #E.G (4,3,4,2,5,0) = 4x^3+4x^2+5x
-trinomial_derivative_calc(4,3,-2,3,5,0)
+trinomial_derivative_calc(constant_one,exponent_one,constant_two,exponent_two, constant_three, exponent_three)
 
 
 
