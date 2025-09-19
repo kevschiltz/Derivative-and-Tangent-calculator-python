@@ -164,10 +164,6 @@ clear()
 exponent_three = int(input(f"What is your third exponent? {constant_one}x^{exponent_one} + {constant_two}x^{exponent_two} + {constant_three}x^"))
 clear()
 
-
-#THIS IS WHERE YOU INPUT NUMBERS
-#NUMBERS GO coefficitent1, exponent1, coefficitent2, exponent2, coefficitent3, exponent3
-#E.G (4,3,4,2,5,0) = 4x^3+4x^2+5x
 trinomial_derivative_calc(constant_one,exponent_one,constant_two,exponent_two, constant_three, exponent_three)
 
 
