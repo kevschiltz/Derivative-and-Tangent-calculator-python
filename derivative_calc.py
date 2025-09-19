@@ -138,7 +138,9 @@ def trinomial_derivative_calc(constant_one,exponent_one,constant_two,exponent_tw
         equation = f"y = {int(m)}X{int(b)}"
         print(f"The tangent line at ({x_value},{y_value}) is: {equation}")
 
-
+#THIS IS WHERE YOU INPUT NUMBERS
+#NUMBERS GO coefficitent1, exponent1, coefficitent2, exponent2, coefficitent3, exponent3
+#E.G (4,3,4,2,5,0) = 4x^3+4x^2+5x
 trinomial_derivative_calc(4,3,-2,3,5,0)
 
 
